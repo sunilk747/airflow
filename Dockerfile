@@ -8,9 +8,9 @@ ENV AIRFLOW_HOME=/usr/local/airflow
 
 COPY ./airflow.cfg /usr/local/airflow/airflow.cfg
 
-RUN sudo adduser dockuser
-RUN chown dockuser:dockuser -R /usr/local/airflow
-USER dockuser
+# RUN sudo adduser dockuser
+# RUN chown dockuser:dockuser -R /usr/local/airflow
+# USER dockuser
 
 #RUN sudo addgroup --system user && sudo adduser --system --group user
 #RUN sudo chown -R user:user /usr/local/airflow && sudo chmod -R 755 /usr/local/airflow
