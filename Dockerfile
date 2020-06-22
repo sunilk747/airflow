@@ -1,4 +1,4 @@
-FROM puckel/docker-airflow:latest
+FROM sunilsamal/airflow:latest
 RUN pip install --user psycopg2-binary
 ENV AIRFLOW_HOME=/usr/local/airflow
 
